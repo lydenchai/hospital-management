@@ -17,27 +17,26 @@ export class Hospital {
         this.name = name;
         this.address = address;
     }
-    addRoom(newRoom:Room){
+    addRoom(newRoom: Room) {
         return this.rooms.push(newRoom);
     }
-    addBed(newBed:Bed){
+    addBed(newBed: Bed) {
         return this.beds.push(newBed);
     }
-    addPatient(newPatient:Patient){
+    addPatient(newPatient: Patient) {
         return this.patients.push(newPatient);
     }
-    addDoctor(newDoctor:Doctor){
+    addDoctor(newDoctor: Doctor) {
         return this.doctors.push(newDoctor);
     }
-    checkDoctor():string{
-        for(let doctor of this.doctors){
-            if(doctor.isAvailable()){
+    checkDoctor(): string {
+        for (let doctor of this.doctors) {
+            if (doctor.isAvailable()) {
                 return doctor.getDoctorID();
             }
         }
     }
-    addAppointment(newAP:Appointment){
+    addAppointment(newAP: Appointment) {
         return this.appointments.push(newAP);
     }
 }
-    

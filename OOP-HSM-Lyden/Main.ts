@@ -11,14 +11,14 @@ import { Skill } from "./src/Person/Skill";
 import { Hospital } from "./src/Hospital";
 import { Bed } from "./src/Resource/Bed";
 
-let hospital = new Hospital("Angkor HOSPITAL","Phnom Penh");
-let doctorJoin= new DateTime("10/10/2005", "7:30 AM");
+let hospital = new Hospital("Angkor HOSPITAL", "Phnom Penh");
+let doctorJoin = new DateTime("10/10/2005", "7:30 AM");
 let doctor = new Doctor("Sovanda", 35, Gender.MALE, doctorJoin, "D001", Status.Available, [Skill.FEVER]);
 let patient1 = new Patient("Romdul", 20, Gender.FEMALE, "P001", [Disease.Fever, Disease.Teeth]);
 let patient2 = new Patient("Samang", 19, Gender.MALE, "P002", [Disease.HeartDisease]);
 let appointmentRoom = new Room("B05", RoomType.Appointment);
 let bed = new Bed("A03");
-let scedule = new Appointment("11/11/2021","01:30 PM", RoomType.Appointment)
+let scedule = new Appointment("11/11/2021", "01:30 PM", RoomType.Appointment)
 
 hospital.addBed(bed);
 hospital.addDoctor(doctor);

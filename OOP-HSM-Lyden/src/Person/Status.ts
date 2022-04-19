@@ -1,5 +1,5 @@
-export enum Status{
-    Available="Available",
-    Unavialable="Unavailable"
+export enum Status {
+    Available = "Available",
+    Unavialable = "Unavailable"
 }
 

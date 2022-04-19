@@ -6,7 +6,7 @@ export class Bed extends Resource {
     constructor(id: string) {
         super(id);
     }
-    getPatient(): Patient{
+    getPatient(): Patient {
         return this.patient;
     }
 }

@@ -3,7 +3,7 @@ import { Resource } from "./Resource";
 import { RoomType } from "./RoomType";
 import { Bed } from "./Bed";
 
-export class Room extends Resource{
+export class Room extends Resource {
     private capacity: Bed;
     private room: RoomType;
     private patientList: Patient[];
@@ -11,11 +11,11 @@ export class Room extends Resource{
         super(id);
         this.room = room;
     }
-    addPatient(newPatient: Patient){
+    addPatient(newPatient: Patient) {
         let numberOfBed = this.capacity.getPatient.length;
-        if ( numberOfBed <= 4 ){
+        if (numberOfBed <= 4) {
             this.patientList.push(newPatient);
-        }else{
+        } else {
             "Full can not add!!!"
         }
     }
